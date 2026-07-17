@@ -6,7 +6,7 @@ class Solution {
          list.add(new ArrayList<>(path));
          return ;
         }
-        if(index>=candidates.length||target<0)
+        if(index==candidates.length||target<0)
          return;
         path.add(candidates[index]);
         combinationSum2(candidates,target-candidates[index],index+1,path);
