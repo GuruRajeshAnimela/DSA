@@ -19,8 +19,8 @@ class Solution {
 
     }
     public List<List<Integer>> combinationSum3(int k, int n) {
-    //   if(k>n||n>9)
-    //    return list;
+      if(k>n)
+       return list;
        int[] a = {1,2,3,4,5,6,7,8,9};
        
       combinationSum3(k,n,a,0,new ArrayList<>());
