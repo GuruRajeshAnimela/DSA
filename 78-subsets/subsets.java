@@ -7,12 +7,10 @@ class Solution {
       }
       if(index>nums.length)
        return ;
-    //set.add(nums[index]);
-    subsets(nums,index+1,set);
     set.add(nums[index]);
-    //set.remove(set.size()-1);
     subsets(nums,index+1,set);
     set.remove(set.size()-1);
+    subsets(nums,index+1,set);
   }
     public List<List<Integer>> subsets(int[] nums) {
         
