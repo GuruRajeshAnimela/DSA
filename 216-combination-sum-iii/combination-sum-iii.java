@@ -7,7 +7,7 @@ class Solution {
             list.add(new ArrayList<>(path));
             return ;
         }
-         if(n<0||path.size()>k||index>=a.length){
+         if(n<0||path.size()>k||index==a.length){
             return;
         }
         // if(!path.contains(a[index]))
