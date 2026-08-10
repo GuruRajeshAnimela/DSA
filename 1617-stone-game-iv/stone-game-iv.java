@@ -4,8 +4,8 @@ class Solution {
         
         for(int i =1;i<=n;i++){
             for(int j =1;j*j<=i;j++){
-
-                if(dp[i-(j*j)]==false){
+                int s = j*j;
+                if(dp[i-(s)]==false){
                     dp[i]=true;
                     break;
                 }
